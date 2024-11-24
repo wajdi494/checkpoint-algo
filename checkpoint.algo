@@ -1,0 +1,24 @@
+ALGORITHM countcharacters
+VAR
+   
+   str:STRING;
+   word,vl,snt,i:INTEGER;
+   
+
+BEGIN
+    word:=0;
+    vl:=0;
+    snt:=str.length
+    FOR i FROM 0 TO str.length-1 DO
+        IF (str[i]=" ") THEN
+            word:=word+1;
+        END_IF
+        IF (str[i]="a" or str[i]="e" or str[i]="y"
+        or st [i]="u" or str[i]="i" or str[i]="o") THEN
+             vl:=vl+1;
+        END_IF
+    END_FOR
+     write("the number of  word is:" , word );
+     write("the number of  voyelles is :" , vl);
+     write("thr number of  snt is:" , str.length );
+END
